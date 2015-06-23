@@ -3,6 +3,8 @@ try:
 except ImportError:
     from distutils.core import setup
 
+import instaproxy
+
 setup(
     name='instaproxy',
     version='0.1',
@@ -11,6 +13,11 @@ setup(
     url='',
     description='A command line tool to work with InstantProxies.com service',
     long_description=open('README.rst').read(),
+    entry_points={
+            'console_scripts': [
+                'instaproxy = instaproxy.core.py:main',
+            ],
+        },
     packages=['instaproxy'],
     license="Apache 2.0",
     keywords='instantproxies.com proxy console cli',
