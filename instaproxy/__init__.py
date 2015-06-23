@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-__title__ = 'ADM client'
+__title__ = 'instaproxy-console'
 __version__ = "0.1"
 __author__ = "Andrew Druchenko"
 __contact__ = "bananos@dev.co.ua"
