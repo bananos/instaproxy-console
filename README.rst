@@ -7,9 +7,12 @@ Usage
 
 .. code:: bash
 
-    pip install https://github.com/bananos/instaproxy-console/archive/master.zip
+    bananos@amber: $ pip install https://github.com/bananos/instaproxy-console/archive/master.zip
+
+
+.. code:: bash
 	
-	instaproxy --username=12233 --password=XXXXX
+	bananos@amber: $ instaproxy --username=12233 --password=XXXXX
 	173.218.103.213:3128
 	173.218.91.14:3128
 	143.218.133.212:3128
