@@ -70,17 +70,17 @@ def main():
     args = parser.parse_args()
 
     if args.username is None or args.password is None:
-        print "Please, provide valid username and/or password"
+        print("Please, provide valid username and/or password")
         return 1
 
     try:
         resp = web_login(args.username, args.password)
         proxies = get_proxy_list(resp)
         for p in proxies:
-            print p
+            print(p)
         return 0
     except Exception as e:
-        print "Error: %s" % type(e)
+        print("Error: %s" % type(e))
         return 1
 
 if __name__ == "__main__":
